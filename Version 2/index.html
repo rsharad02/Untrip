@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untrip Homepage</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#"><span>Un</span>trip</a>
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation Bar">
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Explore</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+   <section class="hero">
+       <div class="container">
+        <img src="images/landing-illustration.svg" class="hero-img" alt="Landing page illustration">
+           <div class="right-col">
+               <p class="overline">a travel codex</p>
+               <h1>Plan Less Enjoy More</h1>
+               <h2>IT’S YOUR ‘VACATION’.
+                ACT LIKE IT IS.</h2>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Explore Below</a>
+                    <div class="wrapper">
+                        <div class="search-input">
+                            <input type="text" placeholder="search a city" id="citySearchInput">
+                            <div class="autocom-box">
+                                <li>Goa</li>
+                                <li>Puri</li>
+                                <li>Pehelwanpur</li>
+                                <li>Delhi</li>
+                                <li>Chennai</li>
+                                <li>Mumbai</li>
+                            </div>
+                            <img id="search-icon-id" src="images/magnifying-glass.svg" class="search-icon" alt="Search"> <!--come back to this later for search box-->
+                        </div>
+                    </div>
+                </div>
+           </div>
+       </div>
+   </section>
+   
+   <section class="features-section">
+       <div class="container">
+           <ul>
+               <li class="info-card">
+                   <blockquote>...Maps? Google or Apple?</blockquote>
+                   <blockquote>Where did I bookmark it?</blockquote>
+                   <blockquote>The blog directions told us further left...?</blockquote>
+                   <p class="card-feature-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum sed faucibus lobortis non turpis in justo netus molestie. Feugiat nisi, nibh enim non tincidunt eu.</p>
+                   <img class="image-1" src="images/couch-girls.svg" alt="Feature 1 couch friends">
+               </li>
+               <li class="info-card">
+                   <img src="images/wheelchair-girls.svg" alt="Feature 2 Two girls with a wheelchair girl">   <!--Resize image from Adobe XD-->
+                   <blockquote>...Maps? Google or Apple?</blockquote>
+                   <blockquote>Where did I bookmark it?</blockquote>
+                   <blockquote>The blog directions told us further left...?</blockquote>
+                   <p class="card-feature-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum sed faucibus lobortis non turpis in justo netus molestie. Feugiat nisi, nibh enim non tincidunt eu.</p>
+                </li>
+                <li class="info-card">
+                    <blockquote>...Maps? Google or Apple?</blockquote>
+                    <blockquote>Where did I bookmark it?</blockquote>
+                    <blockquote>The blog directions told us further left...?</blockquote>
+                    <p class="card-feature-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum sed faucibus lobortis non turpis in justo netus molestie. Feugiat nisi, nibh enim non tincidunt eu.</p>
+                    <img src="images/french-men.svg" alt="Feature 3 Two friends acting French">
+                </li>
+                <li class="info-card">
+                    <img src="images/purple-friends-couch.svg" alt="Feature 4 Two girls in purple drip sitting on a couch">
+                    <blockquote>...Maps? Google or Apple?</blockquote>
+                    <blockquote>Where did I bookmark it?</blockquote>
+                    <blockquote>The blog directions told us further left...?</blockquote>
+                    <p class="card-feature-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum sed faucibus lobortis non turpis in justo netus molestie. Feugiat nisi, nibh enim non tincidunt eu.</p>
+                 </li>
+           </ul>
+       </div>
+   </section>
+
+   <script>
+
+       const mobileBtn = document.getElementById('mobile-cta')
+           nav = document.querySelector('nav');
+           mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+        
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+   </script>
+
+   <script src="js/script.js"></script>
+   <script src="js/suggestions.js"></script>
+   <script src="js/autocomplete.js"></script>
+</body>
+</html>
