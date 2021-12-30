@@ -30,7 +30,7 @@ var ps = "12.958295, 80.057305";
 var rs = '12.957068, 80.056898';
 var cs = '12.958281,80.057508';
 
-var mapAPIKey = "&key=AIzaSyAiJYvVftcMNWubKRKsDDVu8avXuUQgEg8"
+var mapAPIKey = "&key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxgEg8"
 // var cs = '12.959229,80.057353';
 mapSource = mapSource_NALCO + mapAPIKey;
 document.getElementById("mapID").src = mapSource
